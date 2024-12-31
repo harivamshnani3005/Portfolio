@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateX(-100%); }
+            to { transform: translateX(0); }
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            animation: fadeIn 1.5s ease-in;
+        }
+        header {
+            background: #ff6f61;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            animation: slideIn 1s ease-in-out;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #ff9671;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        nav a:hover {
+            color: #ffdab9;
+            transform: scale(1.1);
+        }
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            background: linear-gradient(to bottom, #ffecd2, #fcb69f);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            animation: fadeIn 1.5s ease-in;
+        }
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+        .profile-pic {
+            display: block;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 20px auto;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        .profile-pic:hover {
+            transform: scale(1.1);
+        }
+        .skills-list, .project-list {
+            list-style: none;
+            padding: 0;
+        }
+        .skills-list li, .project-list li {
+            margin: 5px 0;
+            padding: 10px;
+            background: linear-gradient(to right, #ffe259, #ffa751);
+            border-radius: 5px;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+        .skills-list li:hover, .project-list li:hover {
+            background: linear-gradient(to right, #ffa751, #ffe259);
+            transform: translateY(-5px);
+        }
+        .certificate-image {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 10px auto;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        .certificate-image:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            background: #ff6f61;
+            color: #fff;
+            padding: 10px 20px;
+            position: relative;
+            animation: slideIn 1s ease-in-out;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="https://res.cloudinary.com/dydven01s/image/upload/c_pad,w_800,h_800,ar_1:1/v1735659184/harivamsh_photo_kzvp0x.jpg" alt="My Profile Picture" class="profile-pic">
+            <p>I am <strong>Harivamsh Vemula</strong>.I am a second-year B.Tech student at SRU with a strong foundation in programming languages, including <strong>Python, Java, and C</strong>. Currently, I am expanding my skill set by learning <strong>HTML, CSS, and JavaScript</strong> to deepen my expertise in web development.
+
+                Driven by a passion for software development, I enjoy building applications and bots that address real-world challenges. My goal is to contribute meaningfully to the software industry, collaborate on innovative projects, and continually grow as a developer.
+                
+                I'm eager to connect with like-minded professionals and explore opportunities to make an impact through technology. Let’s connect and work together to drive innovation!
+            </p>
+        </section>
+        
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>HTML, CSS, JavaScript</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>C</li>
+            </ul>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul class="project-list">
+                <li>
+                    <strong>Project 1:</strong> E-commerce Furniture Website
+                    <p>Developed a fully responsive e-commerce platform with user-friendly navigation, cart functionality, and payment gateway integration.</p>
+                    <p>Check it out here: <a href="https://woodex-ten.vercel.app/" target="_blank">View Project</a></p>
+                </li>
+            </ul>
+        </section>
+        
+        <section id="education">
+            <h2>Education & Certificates</h2>
+            <ul class="project-list">
+                <li>
+                    <p>Studing 2nd year in SR University</p>
+                </li>
+                <li>
+                    <strong>Certification:</strong> Introduction to Networks
+                    <p>Issued by: Cisco Networking, Year: 2024</p>
+                    <a href="file:///C:/Users/hariv/OneDrive/Documents/SRU/portfolio/certificates/Cisco%20certificate%20.pdf"><img src="C:\Users\hariv\OneDrive\Documents\SRU\portfolio\certificates\Cisco certificate .pdf" alt="Computer Networking Certificate" class="certificate-image"></a>
+                </li>
+                <li>
+                    <strong>Certification:</strong> Cyber Security
+                    <p>Issued by: Agratas Academy pvt Ltd, Year: 2024</p>
+                    <a href="file:///C:/Users/hariv/OneDrive/Documents/SRU/portfolio/certificates/Harivamsh%20Vemula.Internship%20certificate.pdf"><img src="C:\Users\hariv\OneDrive\Documents\SRU\portfolio\certificates\Harivamsh Vemula.Internship certificate.pdf" alt="Cyber Security Internship Certificate" class="certificate-image"></a>
+                </li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>If you'd like to connect with me, feel free to reach out:</p>
+            <ul>
+                <li>Email: rachakondabharadwaj@gmail.com</li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/rachakonda-bharadwaj-2a6324287/" target="_blank">linkedin.com/in/rachakondabharadwaj</a></li>
+                <li>GitHub: <a href="https://github.com/Bharadwaj1433" target="_blank">github.com/Bharadwaj1433</a></li>
+            </ul>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Harivmash Vemula. All rights reserved.</p>
+    </footer>
+</body>
+</html>
